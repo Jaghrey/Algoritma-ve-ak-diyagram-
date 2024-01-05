@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="&#199;a&#287;r&#305;"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-23 06:53:02 &#214;S"/>
+        <attribute name="created" value="w4dhxJ9yxLE7REVTS1RPUC1NRk1BVVFGOzIwMjMtMTEtMjM7MDY6Mzk6NTMgw5ZTOzM1MzQ="/>
+        <attribute name="edited" value="w4dhxJ9yxLE7REVTS1RPUC1NRk1BVVFGOzIwMjMtMTEtMjM7MDY6NTM6MDIgw5ZTOzE7MzYzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="metin, nitem" type="String" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="nitem" expression="&quot;&quot;"/>
+            <output expression="&quot;Tersten yazd&#305;rmak istedi&#287;iniz kelimeyi giriniz. &quot;" newline="True"/>
+            <input variable="metin"/>
+            <for variable="i" start="Len(metin) - 1" end="0" direction="dec" step="1">
+                <assign variable="nitem" expression="nitem&amp;Char(metin,i)"/>
+            </for>
+            <output expression="&quot;Girmi&#351; oldu&#287;unuz '&quot;&amp;metin&amp;&quot;' ifadesinin tersten yaz&#305;l&#305;&#351;&#305; &quot;&amp;nitem" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

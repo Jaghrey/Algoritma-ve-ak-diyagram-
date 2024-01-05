@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 05:48:33 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswNTo0MTozNSDDllM7MjkxNw=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswNTo0MjoyNCDDllM7MTthc3VzO0RFU0tUT1AtSENVUzYzQTsyMDIzLTExLTExOzA1OjM4OjAwIMOWUzvDtmRldiAyLTExLmZwcmc7NzMyNA=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswNTo0ODozMyDDllM7NDszMDMz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, sayac, toplam, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="sayac" expression="1"/>
+            <while expression="sayac &lt;= n">
+                <assign variable="toplam" expression="0"/>
+                <for variable="i" start="1" end="sayac-1" direction="inc" step="1">
+                    <if expression="sayac % i == 0">
+                        <then>
+                            <assign variable="toplam" expression="toplam + i"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+                <if expression="toplam == sayac">
+                    <then>
+                        <output expression="sayac" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

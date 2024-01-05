@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 01:04:41 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMzsxMjo1Nzo1MSDDllM7MjkyMg=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMzswMTowNDo0MSDDllM7MTszMDE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, toplam, i, dizi" type="Real" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="dizi" expression="1/i"/>
+                <assign variable="toplam" expression="toplam + dizi"/>
+            </for>
+            <output expression="&quot;dizinin eleman say&#305;s&#305;: &quot;&amp;i" newline="True"/>
+            <output expression="&quot;dizinin elemanlar&#305; toplam&#305;: &quot;&amp;toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

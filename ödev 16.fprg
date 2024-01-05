@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 11:33:45 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTsxMTozMDo1MCDDlsOWOzMwNDA="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTsxMTozMzo0NSDDlsOWOzE7MzE1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="toplam, sayac" type="Integer" array="False" size=""/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="sayac" expression="0"/>
+            <while expression="sayac &lt;= 50">
+                <assign variable="toplam" expression="toplam + sayac"/>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </while>
+            <output expression="&quot;&#304;lk 50 say&#305;n&#305;n toplam&#305; &quot;&amp; toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

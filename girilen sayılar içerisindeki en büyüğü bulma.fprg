@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="&#199;a&#287;r&#305;"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-23 05:34:34 &#214;S"/>
+        <attribute name="created" value="w4dhxJ9yxLE7REVTS1RPUC1NRk1BVVFGOzIwMjMtMTEtMjM7MDU6MjE6MDkgw5ZTOzM1MjU="/>
+        <attribute name="edited" value="w4dhxJ9yxLE7REVTS1RPUC1NRk1BVVFGOzIwMjMtMTEtMjM7MDU6MzQ6MzQgw5ZTOzE7MzYzNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayi" type="Integer" array="True" size="5"/>
+            <declare name="enb, i, sayici" type="Integer" array="False" size=""/>
+            <assign variable="enb" expression="0"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <output expression="i+1&amp; &quot;.Say&#305;y&#305; Giriniz : &quot;" newline="True"/>
+                <input variable="sayi [ i ]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <if expression="enb&lt;sayi [i]">
+                    <then>
+                        <assign variable="enb" expression="sayi [ i ]"/>
+                        <assign variable="sayici" expression="i+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;Girdi&#287;iniz say&#305;lar i&#231;erisinde en b&#252;y&#252;k &quot;&amp;sayici&amp;&quot; ' inci &quot;&amp;enb&amp;&quot; say&#305;s&#305;d&#305;r.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

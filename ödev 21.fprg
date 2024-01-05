@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 03:57:25 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswMzoxOTowNCDDllM7MjkxNg=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswMzo1NzoyNSDDllM7MTszMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, L, i, toplam, C1" type="Integer" array="False" size=""/>
+            <declare name="C, strn" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="strn" expression="ToString(n)"/>
+            <assign variable="C" expression="&quot;&quot;"/>
+            <assign variable="L" expression="Len(strn)"/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="0" end="L - 1" direction="inc" step="1">
+                <assign variable="C" expression="char(strn, i)"/>
+                <assign variable="C1" expression="ToInteger(C)"/>
+                <assign variable="toplam" expression="toplam + (C1 ^ L)"/>
+            </for>
+            <if expression="toplam == n">
+                <then>
+                    <output expression="&quot;Armstrong say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Armstrong say&#305; de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

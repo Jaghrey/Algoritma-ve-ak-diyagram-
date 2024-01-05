@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 11:30:48 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTsxMToyOToxNiDDlsOWOzMwNTA="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTsxMTozMDo0OCDDlsOWOzE7MzE1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sayac" type="Integer" array="False" size=""/>
+            <assign variable="sayac" expression="0"/>
+            <while expression="sayac &lt; 10">
+                <output expression="&quot;Hello World&quot;" newline="True"/>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

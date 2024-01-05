@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 10:40:33 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswODo1OTo1NiDDlsOWOzMwNjM="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTsxMDo0MDozMyDDlsOWOzE7MzE0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="kenar1, kenar2, alan, &#231;evre" type="Integer" array="False" size=""/>
+            <input variable="kenar1"/>
+            <input variable="kenar2"/>
+            <assign variable="alan" expression="kenar1 * kenar2"/>
+            <assign variable="&#231;evre" expression="2 * (kenar1 + kenar2)"/>
+            <output expression="&quot;dikd&#246;rtgenin alan&#305;&quot;&amp;&quot; &quot;&amp; alan" newline="True"/>
+            <output expression="&quot;dikd&#246;rtgenin &#231;evresi &quot;&amp; &#231;evre" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

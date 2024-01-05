@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 05:41:26 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswNTozODowMCDDllM7MjkxNQ=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswNTo0MToyNiDDllM7MTszMDI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, toplam, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="1" end="n-1" direction="inc" step="1">
+                <if expression="n % i == 0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + i"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <if expression="toplam == n">
+                <then>
+                    <output expression="n&amp;&quot; M&#252;kemmel say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n&amp;&quot; M&#252;kemmel say&#305; de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

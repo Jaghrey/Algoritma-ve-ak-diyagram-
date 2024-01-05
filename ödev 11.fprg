@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 03:05:16 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMzswMzowMjowMiDDllM7MjkwOA=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMzswMzowNToxNiDDllM7MzszMDI2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, toplam, i, intC" type="Integer" array="False" size=""/>
+            <declare name="C" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="C" expression="&quot;&quot;"/>
+            <assign variable="toplam" expression="0"/>
+            <for variable="i" start="1" end="n" direction="inc" step="1">
+                <assign variable="C" expression="C&amp;1"/>
+                <assign variable="intC" expression="ToInteger(C)"/>
+                <assign variable="toplam" expression="toplam + intC"/>
+            </for>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

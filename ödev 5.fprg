@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 03:22:43 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMjswMzowNDowNyDDllM7MjkxNA=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMjswMzoyMjo0MyDDllM7MjszMDIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, sayac, L, i, toplam, int1, sayac2, faktoriyel" type="Integer" array="False" size=""/>
+            <declare name="strn, C" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="sayac" expression="0"/>
+            <assign variable="C" expression="&quot;&quot;"/>
+            <assign variable="sayac2" expression="1"/>
+            <assign variable="faktoriyel" expression="1"/>
+            <while expression="sayac &lt;= n">
+                <assign variable="toplam" expression="0"/>
+                <assign variable="strn" expression="ToString(sayac)"/>
+                <assign variable="L" expression="Len(strn)"/>
+                <for variable="i" start="0" end="L-1" direction="inc" step="1">
+                    <assign variable="C" expression="Char(strn, i)"/>
+                    <assign variable="int1" expression="To&#304;nteger(C)"/>
+                    <if expression="int1 == 0">
+                        <then>
+                            <assign variable="toplam" expression="toplam + 1"/>
+                        </then>
+                        <else>
+                            <while expression="sayac2 &lt;= int1">
+                                <assign variable="faktoriyel" expression="sayac2 * faktoriyel"/>
+                                <assign variable="sayac2" expression="sayac2 + 1"/>
+                            </while>
+                            <assign variable="sayac2" expression="1"/>
+                            <assign variable="toplam" expression="toplam + faktoriyel"/>
+                            <assign variable="faktoriyel" expression="1"/>
+                        </else>
+                    </if>
+                </for>
+                <if expression="toplam == sayac">
+                    <then>
+                        <output expression="sayac" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="sayac" expression="sayac + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 01:39:56 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswMTozNzo1NCDDllM7MjkxOQ=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswMTozODozNCDDllM7MTthc3VzO0RFU0tUT1AtSENVUzYzQTsyMDIzLTExLTExOzAxOjMzOjQ2IMOWUzvDtmRldiAyLTcuZnByZzs3Mjg0"/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswMTozOTo1NiDDllM7MTszMDMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, j, toplam" type="Integer" array="False" size=""/>
+            <declare name="asal" type="Boolean" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="i" expression="2"/>
+            <while expression="i &lt;= n">
+                <assign variable="asal" expression="true"/>
+                <assign variable="j" expression="2"/>
+                <while expression="j &lt;= i/2 &amp;&amp; asal == true">
+                    <if expression="i % j == 0">
+                        <then>
+                            <assign variable="asal" expression="false"/>
+                        </then>
+                        <else/>
+                    </if>
+                    <assign variable="j" expression="j + 1"/>
+                </while>
+                <if expression="asal == true">
+                    <then>
+                        <assign variable="toplam" expression="toplam + i"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="i" expression="i + 1"/>
+            </while>
+            <output expression="toplam" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

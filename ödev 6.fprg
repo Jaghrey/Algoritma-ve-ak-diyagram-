@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 04:22:00 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMjswNDoxNzoyMSDDllM7MjkxNQ=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMjswNDoyMTo1OSDDllM7MTszMDI5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, L, n1" type="Integer" array="False" size=""/>
+            <declare name="strn, rstrn" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="strn" expression="ToString(n)"/>
+            <assign variable="L" expression="Len(strn)"/>
+            <assign variable="rstrn" expression="&quot;&quot;"/>
+            <for variable="L" start="L - 1" end="0" direction="dec" step="1">
+                <assign variable="rstrn" expression="rstrn&amp;Char(strn, L)"/>
+            </for>
+            <assign variable="n1" expression="ToInteger(rstrn)"/>
+            <if expression="n == n1">
+                <then>
+                    <output expression="n&amp;&quot; Palindrom say&#305;d&#305;r.&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n&amp;&quot; Palindom say&#305; de&#287;ildir.&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

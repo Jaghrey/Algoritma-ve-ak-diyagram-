@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-13 12:57:47 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMzsxMjo1NDozNyDDllM7MjkyMw=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMzsxMjo1Nzo0NyDDllM7MTszMDM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, y, sonu&#231;" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="2"/>
+            <assign variable="y" expression="4"/>
+            <assign variable="sonu&#231;" expression="x ^ y"/>
+            <output expression="&quot;2'nin d&#246;rd&#252;nc&#252; kuvveti: &quot;&amp;sonu&#231;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="&#199;a&#287;r&#305;"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-23 04:50:25 &#214;S"/>
+        <attribute name="created" value="w4dhxJ9yxLE7REVTS1RPUC1NRk1BVVFGOzIwMjMtMTEtMjM7MDQ6NDU6MTcgw5ZTOzM1Mjk="/>
+        <attribute name="edited" value="w4dhxJ9yxLE7REVTS1RPUC1NRk1BVVFGOzIwMjMtMTEtMjM7MDQ6NTA6MjUgw5ZTOzE7MzYzMg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="topla, bsl, bts" type="Integer" array="False" size=""/>
+            <assign variable="topla" expression="0"/>
+            <input variable="bsl"/>
+            <input variable="bts"/>
+            <do expression="bsl&lt;=bts">
+                <assign variable="topla" expression="bsl + topla"/>
+                <assign variable="bsl" expression="bsl + 1"/>
+            </do>
+            <output expression="topla" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 05:18:55 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswNDowMDo1MSDDllM7MjkwOQ=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswNToxMDoxMCDDllM7MTthc3VzO0RFU0tUT1AtSENVUzYzQTsyMDIzLTExLTExOzAzOjE5OjA0IMOWUzvDtmRldiAyLTkuZnByZzs3Mjc0"/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTswNToxODo1NSDDllM7MTszMDMx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, k, k1, i, C1, toplam" type="Integer" array="False" size=""/>
+            <declare name="C, strk" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="k" expression="1"/>
+            <while expression="k &lt;= n">
+                <assign variable="strk" expression="ToString(k)"/>
+                <assign variable="C" expression="&quot;&quot;"/>
+                <assign variable="k1" expression="Len(strk)"/>
+                <assign variable="toplam" expression="0"/>
+                <for variable="i" start="0" end="k1 - 1" direction="inc" step="1">
+                    <assign variable="C" expression="char(strk, i)"/>
+                    <assign variable="C1" expression="ToInteger(C)"/>
+                    <assign variable="toplam" expression="toplam + (C1 ^ k1)"/>
+                </for>
+                <if expression="toplam == k">
+                    <then>
+                        <output expression="k" newline="True"/>
+                    </then>
+                    <else/>
+                </if>
+                <assign variable="k" expression="k + 1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

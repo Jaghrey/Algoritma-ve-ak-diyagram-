@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-12 03:04:00 &#214;S"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMjswMTo1MjozNiDDllM7MjkxNw=="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMjswMzowNDowMCDDllM7MTszMDE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, i, sayac, toplam, C1, K, faktoriyel, i2, sayac1" type="Integer" array="False" size=""/>
+            <declare name="strn, C" type="String" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="strn" expression="ToString(n)"/>
+            <assign variable="i" expression="Len(strn)"/>
+            <assign variable="C" expression="&quot;&quot;"/>
+            <assign variable="toplam" expression="0"/>
+            <assign variable="faktoriyel" expression="1"/>
+            <assign variable="sayac1" expression="1"/>
+            <for variable="sayac" start="0" end="i-1" direction="inc" step="1">
+                <assign variable="C" expression="Char(strn, sayac)"/>
+                <assign variable="i2" expression="To&#304;nteger(C)"/>
+                <if expression="i2 == 0">
+                    <then>
+                        <assign variable="toplam" expression="toplam + 1"/>
+                    </then>
+                    <else>
+                        <while expression="sayac1 &lt;= i2">
+                            <assign variable="faktoriyel" expression="sayac1 * faktoriyel"/>
+                            <assign variable="sayac1" expression="sayac1 + 1"/>
+                        </while>
+                        <assign variable="sayac1" expression="1"/>
+                        <assign variable="toplam" expression="toplam + faktoriyel"/>
+                        <assign variable="faktoriyel" expression="1"/>
+                    </else>
+                </if>
+            </for>
+            <output expression="toplam" newline="True"/>
+            <if expression="toplam == n">
+                <then>
+                    <output expression="n&amp;&quot; is a Strong Number&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="n&amp;&quot; is not a Strong Number&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="inputString" type="None" variable="">
+        <parameters>
+            <parameter name="C" type="String" array="False"/>
+        </parameters>
+        <body/>
+    </function>
+</flowgorithm>

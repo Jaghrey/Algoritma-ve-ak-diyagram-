@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="asus"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-11 11:29:13 &#214;&#214;"/>
+        <attribute name="created" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTsxMDo0MDozNyDDlsOWOzMwNDU="/>
+        <attribute name="edited" value="YXN1cztERVNLVE9QLUhDVVM2M0E7MjAyMy0xMS0xMTsxMToyOToxMyDDlsOWOzE7MzE1NQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, denklem" type="String" array="False" size=""/>
+            <declare name="a, b, c, d" type="Integer" array="False" size=""/>
+            <declare name="k&#246;k1, k&#246;k2" type="Real" array="False" size=""/>
+            <input variable="a"/>
+            <input variable="b"/>
+            <input variable="c"/>
+            <assign variable="denklem" expression="&quot;a*x^2 + b*x + c&quot;"/>
+            <assign variable="d" expression="b^2 - 4*a*c"/>
+            <assign variable="k&#246;k1" expression="(-b - Sqrt(d))/2*a"/>
+            <assign variable="k&#246;k2" expression="(-b + Sqrt(d))/2*a"/>
+            <output expression="&quot;denklemin deltas&#305; &quot;&amp; d" newline="True"/>
+            <output expression="&quot;denklemin birinci k&#246;k&#252; &quot;&amp; k&#246;k1" newline="True"/>
+            <output expression="&quot;denklemin ikinci k&#246;k&#252; &quot;&amp; k&#246;k2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
